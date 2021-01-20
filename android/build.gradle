@@ -51,6 +51,9 @@ android {
         implementation ('com.google.firebase:firebase-analytics') {
             exclude module: "play-services-ads-identifier"
         }
+        configurations {
+            compile.exclude group:'play-services-ads-identifier'
+        }
         implementation 'androidx.annotation:annotation:1.1.0'
     }
 }
